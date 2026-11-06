@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f3f0e9;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 950px;
+            width: 100%;
+            display: flex;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .image {
+            width: 45%;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .content {
+            width: 55%;
+            padding: 55px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .tag {
+            color: #66816f;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 20px 0;
+            color: #252b28;
+        }
+
+        h1 span {
+            color: #66816f;
+        }
+
+        p {
+            color: #68716c;
+            line-height: 1.8;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin: 15px 0 25px;
+        }
+
+        .skills span {
+            background: #edf2ed;
+            color: #4f6b58;
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: fit-content;
+            background: #66816f;
+            color: white;
+            padding: 13px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #405e4b;
+        }
+
+        @media(max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image, .content {
+                width: 100%;
+            }
+
+            .image {
+                height: 280px;
+            }
+
+            .content {
+                padding: 35px 25px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="image">
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=85"
+                alt="Developer workspace">
+        </div>
+
+        <div class="content">
+
+            <div class="tag">
+                Computer Engineer | Aspiring Cloud Engineer
+            </div>
+
+            <h1>Hello, I'm<br>
+                <span>Vaishnavi.</span>
+            </h1>
+
+            <p>
+                I'm an enthusiastic coder looking for an opportunity
+                to grow, learn, and contribute my best.
+                I enjoy exploring new technologies, solving problems,
+                and turning ideas into practical solutions.
+            </p>
+
+            <p>
+                Currently strengthening my knowledge of AWS,
+                Linux, Docker, Python, and web development.
+            </p>
+
+            <div class="skills">
+                <span>AWS</span>
+                <span>Linux</span>
+                <span>Docker</span>
+                <span>Python</span>
+                <span>JavaScript</span>
+                <span>React</span>
+            </div>
+
+            <a href="mailto:your-email@example.com" class="btn">
+                GET IN TOUCH
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
